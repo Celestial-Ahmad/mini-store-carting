@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shopping Cart System</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/jpeg" href="invextech_logo.jpeg" />
+</head>
+<body>
+
+  <h1>InvexStore 🏬</h1>
+
+  <div class="table-wrapper">
+    <!-- Product List Section -->
+    <div class="table-section">
+      <h2>All Products 🏷️</h2>
+      <table id="allItemsTable">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Add</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Rendered by JS -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Cart Section -->
+    <div class="table-section">
+      <h2>Cart 🛒</h2>
+      <table id="cartTable">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Qty</th>
+            <th>Subtotal</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Rendered by JS -->
+        </tbody>
+      </table>
+      <div id="total">Total: $0</div>
+      <button id="checkoutBtn" onclick="checkoutCart()">Checkout 💳</button>
+    </div>
+  </div>
+
+  <!-- Modal for Receipt -->
+  <div id="receiptModal" class="modal">
+    <div class="modal-content">
+      <h2>Receipt 🧾</h2>
+      <div id="receiptDetails">
+        <!-- Rendered by JS -->
+      </div>
+      <button onclick="printReceipt()">Print Receipt 🖨️</button>
+      <button style="margin-left: 5px;" onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

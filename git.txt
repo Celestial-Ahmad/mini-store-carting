@@ -1,0 +1,17 @@
+What is Git?
+Git is a version control system that tracks code changes and allows you to collaborate.
+
+Common Git Commands:
+| Command                         | What it does                      |
+| ------------------------------- | --------------------------------- |
+|  git init                       | Initialize a Git repo             |
+|  git status                     | Check status of files             |
+|  git add .  or  git add <file>  | Stage file(s) for commit          |
+|  git commit -m "msg"            | Save snapshot of code             |
+|  git log                        | Show commit history               |
+|  git branch                     | See branches                      |
+|  git checkout -b branch         | Create and switch to new branch   |
+|  git merge branch               | Merge another branch into current |
+|  git remote add origin <url>    | Link to GitHub repo               |
+|  git push -u origin main        | Push code to GitHub               |
+|  git pull                       | Pull latest code from GitHub      |
